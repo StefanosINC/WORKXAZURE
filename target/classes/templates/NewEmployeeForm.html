@@ -1,0 +1,93 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layouts/defaultLayout">
+<head>
+	<meta charset="UTF-8">
+	<title> </title>
+
+</head>
+
+<body>
+<div layout:fragment="content">
+		<div class = "card">
+			<form action ="#" th:action="@{/albums/create}" th:object="${albumModel}" method="post">
+			<table>
+			<tr>
+		<!--	 <td> Title  </td> <td><input type="text" name="txt" placeholder = "Title"  th:field="*{title}" ></td><td><h5 style="color:red" th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Title Error </h5></td>
+				
+					<div class = "card-body">
+					
+					</tr>
+					
+					<tr>
+						
+					<td> Artist </td> <td> <input type="text" name="txt" placeholder = "Artist" th:field="*{artist}" ></td><td><h5 style="color:red" th:if="${#fields.hasErrors('artist')}" th:errors="*{artist}">Artist Error </h5></td>
+						</tr>
+				<td> Year </td> <td> <input type="text" name="txt" placeholder = "" th:field="*{year}" ></td>
+					
+					</tr>
+					<tr>
+						<td> Price  </td> <td> <input type="text" name="txt" placeholder = "" th:field="*{price}" ></td>
+					</tr>
+						<tr>
+						
+				
+						<td>Track 1 </td> <td> <input type="text" name="txt" placeholder = "Track 1"  th:field="*{tracks[0].title}" ></td>
+					</tr>
+					<tr>
+						<td>Length </td><td><input type="text" name="txt" placeholder = "Track 1 Length"  th:field="*{tracks[0].length}" ></td>
+					</tr> 
+				     <tr>
+						<td> Track 2: </td><td><input type ="text" th:field="*{tracks[1].title}" ></td>
+					</tr>
+					<tr>
+						<td> Track 2 Length: </td><td><input type ="text" th:field="*{tracks[1].length}" ></td>
+					</tr> 
+		<td colspan="3"><input type="submit" value="Create"/></td>
+						</tr>
+					
+							
+					 
+					<tr> -->
+					
+						
+			</table>
+				
+						
+			</form>
+		</div>
+
+</body>
+</html>
+<style>
+
+div#navbarCollapse.collapse.navbar-collapse{
+	background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	font-family: serif;
+}
+
+ body{
+		background: #F0F0F0
+}
+input{
+display: inline-block;
+  padding: 0.6em 1.7em;
+  border: 0.1em solid black;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  
+}
+li{
+	font-size: large;
+	color: black;
+}
+a{
+	color: black;
+}
+</style>
